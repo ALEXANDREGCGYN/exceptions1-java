@@ -26,8 +26,9 @@ public class ProgException2 { // Criando exceções personalizadas - Aula 173
 		Date dateOut = sdf.parse(sc.next());
 		
 		/*
-		 * ESTA VALIDAÇÃO AINDA FICARÁ NO PROGRAMA PRINCIPAL PARA INSTANCIAR O OBJETO 'RESERVATION2'.
-		 * DEVERIA SER IMPLEMENTADA NO CONSTRUTOR DO OBJETO MAS O CONSTRUTOR NÃO RETORNA 'STRING'.
+		 * 	ESTA VALIDAÇÃO AINDA FICARÁ NO PROGRAMA PRINCIPAL PARA INSTANCIAR O OBJETO 'RESERVATION2'
+		 *  QUE DEVERIA SER IMPLEMENTADA NO CONSTRUTOR DO OBJETO.
+		 *  PORÉM, O CONSTRUTOR NÃO RETORNA 'STRING'.
 		 */
 		
 		if (!dateOut.after(dateIn)) { // Função de 'Date' confere se uma data vem depois da outra
@@ -49,6 +50,8 @@ public class ProgException2 { // Criando exceções personalizadas - Aula 173
 			System.out.print("Check-out date (dd/MM/yyyy): ");
 			dateOut = sdf.parse(sc.next());
 
+			// STRING QUE RETORNARÁ AS MENSAGENS DE POSSÍVEIS ERROS! ********************************
+			
 			/*
 			 * REALIZADA UMA MELHORIA NO PROGRAMA PRINCIPAL ATRAVÉS DO CONCEIRO 
 			 * DE *DELEGAÇÃO* ONDE A LÓGICA DE VALIDAÇÃO DAS DATAS FOI REMOVIDA 

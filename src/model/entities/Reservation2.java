@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Reservation2 { // Criando exceções personalizadas - Aula 173
 	
-	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO 'UPDATES()'
+	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO 'UPDATES()' USANDO O CONCEITO DE DELEGAÇÃO!
 	
 	private Integer roomNumber;
 	private Date checkIn;
@@ -21,10 +21,10 @@ public class Reservation2 { // Criando exceções personalizadas - Aula 173
 	public Reservation2() {
 	}
 
-	public Reservation2(Integer roomNumber, Date checkIn, Date checkOut) {
+	public Reservation2(Integer roomNumber, Date dateIn, Date dateOut) {
 		this.roomNumber = roomNumber;
-		this.checkIn = checkIn;
-		this.checkOut = checkOut;
+		this.checkIn = dateIn;
+		this.checkOut = dateOut;
 	}
 
 	public Integer getRoomNumber() {
@@ -61,14 +61,14 @@ public class Reservation2 { // Criando exceções personalizadas - Aula 173
 		 */
 	}
 		
-	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO UPDATEDATES **************************************
+	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO UPDATEDATES => DELEGAÇÃO **************************
 
 	/* 
 	 * Parâmetros 'dateIn' e 'dateOut' do método trazidos do 'ProgException1' original foram 
 	 * aqui alteradas para coincidir com as variáveis da validação (if) e evitar erro de compilação!
 	 */
 	
-	public String updateDates(Date dateIn, Date dateOut) {
+	public String updateDates(Date dateIn, Date dateOut) { // Deixa de ser 'void' p/ser 'String'
 		Date now = new Date();
 		if (dateIn.before(now) || dateOut.before(now)) { // Se as datas forem anteriores, retorna msg
 			return "Reservation dates for update must be future dates!";
