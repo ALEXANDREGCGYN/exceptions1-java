@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Reservation { // Criando exceções personalizadas - Aula 173
 	
+	// Solução 1 (MUITO RUIM): lógica de validação dentro do programa principal.
+
 	private Integer roomNumber;
 	private Date checkIn;
 	private Date checkOut;

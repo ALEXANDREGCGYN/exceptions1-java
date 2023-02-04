@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Reservation2 { // Criando exceções personalizadas - Aula 173
 	
+	// Solução 2 (RUIM): lógica de validação dentro da classe (método retornando uma string).
+
 	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO 'UPDATES()' USANDO O CONCEITO DE DELEGAÇÃO!
 	
 	private Integer roomNumber;

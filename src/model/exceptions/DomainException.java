@@ -1,5 +1,7 @@
 package model.exceptions;
 
+	// Solução 3b (BOA): usando as exceções personalizadas da classe DomainException.
+
 public class DomainException extends Exception { // Poder ser extensão de 'Exception' ou 'RunTimeException' 
 	private static final long serialVersionUID = 1L; // O java já indica a versão 'serializable' 
 	// Exceção lançada por algum erro na entidade de domínio 'Reservation'

@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Reservation3 { // Usando exceções do JAVA - Aula 176
 	
-	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO 'UPDATES()' USANDO O CONCEITO DE DELEGAÇÃO!
+	// Solução 3a (BOA): limpando os 'if' e 'else' do código (usando 'try-catch').
 	
 	private Integer roomNumber;
 	private Date checkIn;
