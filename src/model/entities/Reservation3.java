@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class Reservation3 { // Criando exceções personalizadas - Aula 173
+public class Reservation3 { // Usando exceções do JAVA - Aula 176
 	
 	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO 'UPDATES()' USANDO O CONCEITO DE DELEGAÇÃO!
 	
