@@ -8,7 +8,7 @@ import model.exceptions.DomainException;
 
 public class Reservation4 { // Usando exceções PERSONALIZADAS - Aula 176
 	
-	// LÓGICA DE VALIDAÇÃO IMPLEMENTADA NO MÉTODO 'UPDATES()' USANDO O CONCEITO DE DELEGAÇÃO!
+	// Solução 3b (BOA): usando as exceções personalizadas da classe DomainException.
 	
 	private Integer roomNumber;
 	private Date checkIn;
